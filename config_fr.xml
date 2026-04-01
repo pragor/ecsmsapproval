@@ -1,0 +1,7 @@
+<module>
+    <name>ecsmsapproval</name>
+    <displayName><![CDATA[EC SMS Approval]]></displayName>
+    <description><![CDATA[Gestion du consentement SMS des clients.]]></description>
+    <author><![CDATA[Ether Creation]]></author>
+    <version><![CDATA[1.0.0]]></version>
+</module>
