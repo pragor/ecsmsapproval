@@ -143,7 +143,7 @@ class EcSmsApproval extends Module
      * Usage : Hook::exec('actionEcSmsApprovalCheck', ['id_customer' => $idCustomer])
      *
      * @param array $params ['id_customer' => int]
-     * @return array|null ['has_record' => bool, 'approved' => bool|null]
+     * @return bool|null 
      */
     public function hookActionEcSmsApprovalCheck(array $params)
     {
@@ -159,10 +159,10 @@ class EcSmsApproval extends Module
         );
 
         if (!$row) {
-            return ['has_record' => false, 'approved' => null];
+            return  null;
         }
 
-        return ['has_record' => true, 'approved' => (bool) $row['approval']];
+        return (bool) $row['approval'];
     }
 
     /**
